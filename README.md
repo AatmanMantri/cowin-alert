@@ -6,9 +6,12 @@ https://packaging.python.org/guides/installing-using-pip-and-virtual-environment
 
 Installing dependencies:
 `pip install requests`
+
 `pip install playsound`
+
 `pip install PyObjC` (only required for MacOS)
 
 Command to run:
 `python3 <pincode> <refresh interval (in seconds)> <alert_sound (tested with mp3)>`
+
 eg: `python3 313603 60 song.mp3`
