@@ -5,6 +5,7 @@ For setting up python virtual env (optional but recommended):
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
 Installing dependencies:
+
 `pip install requests`
 
 `pip install playsound`
