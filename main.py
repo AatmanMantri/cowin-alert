@@ -30,6 +30,7 @@ def get_data(pincode):
         response = response.json()
         return True, response
     else:
+		print(datetime.now().strftime("%d/%m/%Y %H:%M:%S"), '- Status code =', response.status_code)
         return False, None
 
 
@@ -43,8 +44,9 @@ def check_slot_availability(response):
                 available = session['available_capacity']
                 vaccine = session['vaccine']
                 if age_limit == 18 and available > 0:
-                    print(vaccine, '-', datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
+                    print(datetime.now().strftime("%d/%m/%Y %H:%M:%S"), '-', vaccine)
                     return True
+	print(datetime.now().strftime("%d/%m/%Y %H:%M:%S"), '- slot not available')
     return False
 
 
